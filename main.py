@@ -26,7 +26,7 @@ K_dict = {"多云": 0.95, "阴": 0.9, "小雨": 0.7, "中雨": 0.5, "大雨": 0.
 
 # 北京时间
 time_bj = datetime.datetime.today() + datetime.timedelta(hours=8)
-now = time_bj.strftime("%Y-%m-%d %H:%M:%S")
+现在 = time_bj.strftime("%Y-%m-%d %H:%M:%S")
 headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
 
 
@@ -84,8 +84,8 @@ def getBeijinTime():
         print(min_ratio)
         print(max_ratio)
         max_ratio = int(hour)
-        min_1 = 3300 * min_ratio
-        max_1 = 3300 * max_ratio
+        min_1 = 21300 * min_ratio
+        max_1 = 29000 * max_ratio
         min_1 = int(K * min_1)
         max_1 = int(K * max_1)
         print("天气系数是")
